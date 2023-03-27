@@ -1,0 +1,31 @@
+{
+  "name": "sdk-mcv",
+  "version": "1.0.0",
+  "description": "一个快速搭建Node SDK编写环境的cli",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "jest",
+    "build": "rm -rf lib && rollup -c rollup.config.js"
+  },
+  "keywords": [
+    "node",
+    "sdk",
+    "cli"
+  ],
+  "author": "godlanbo",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.21.3",
+    "@babel/preset-env": "^7.20.2",
+    "@babel/preset-typescript": "^7.21.0",
+    "@rollup/plugin-babel": "^6.0.3",
+    "@rollup/plugin-typescript": "^11.0.0",
+    "@types/jest": "^29.5.0",
+    "jest": "^29.5.0",
+    "rollup": "^3.20.2",
+    "rollup-plugin-babel": "^4.4.0",
+    "tslib": "^2.5.0",
+    "typescript": "^5.0.2"
+  }
+}
